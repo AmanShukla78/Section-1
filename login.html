@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+
+    <link href="https://fonts.googleapis.com/css?family=Roboto:100,200,300,regular,500,600,700,800,900,100italic,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic" rel="stylesheet" />
+
+    <style>
+
+        *{
+            font-family: Roboto;
+        }
+
+        .card{
+            border: 1px solid gray;
+            width: 20%;
+            border-radius: 15px;
+
+            padding: 30px;
+            box-shadow: 4px 4px 5px 0px #00000077;
+            box-sizing: border-box;
+        }
+
+        body{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .form-title{
+            text-align: center;
+            font-size: 25px;
+        }
+
+        label{
+            display: block;
+            margin-bottom: 4px;
+            font-size: 15px;
+        }
+
+        .text-input{
+            width: 100%;
+            padding: 10px;
+            border-radius: 5px;
+            box-sizing: border-box;
+            border: 1px solid gray;
+            margin-bottom: 30px;
+        }
+
+        .submit-btn{
+            width: 100%;
+            padding: 10px;
+            border-radius: 5px;
+            border: none;
+            background-color: blueviolet;
+            color: white;
+        }
+
+    </style>
+
+</head>
+<body>
+    
+    <div class="card">
+        <h2 class="form-title">Login Form</h2>
+
+        <form>
+            <label>Email Id</label>
+            <input class="text-input" type="email">
+
+            <label>Password</label>
+            <input class="text-input" type="password">
+
+            <a href="#" class="link forgot-link">Forgot Password?</a>
+            
+            <button class="submit-btn">Submit</button>
+
+            <a href="#" class="link signup-link">Not registered yet? Signup Now</a>
+        </form>
+
+    </div>
+
+</body>
+</html>
