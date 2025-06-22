@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+
+    <style>
+        body {
+            margin: 0;
+        }
+
+        .contact-info {
+            border: 2px solid yellow;
+            padding: 20px;
+        }
+
+        .contact-form {
+            border: 2px solid green;
+            padding: 20px;
+        }
+
+        .card {
+            border: 2px solid red;
+            display: grid;
+            grid-template-columns: 2fr 3fr;
+            /* 2:3 ratio */
+            width: 80%;
+            margin: auto;
+            margin-top: 10vh;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 3px 3px 5px 0 rgba(176, 103, 103, 0.3);
+            ;
+        }
+
+        .social-links {
+            display: flex;
+            gap: 10px;
+
+
+        }
+
+        .social-links p {
+            margin: 0;
+
+        }
+
+        .text-input {
+            width: 100%;
+            padding: 5px 10px;
+            margin: 10px 0;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+            box-sizing: border-box;
+        }
+
+        .send {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            display: block;
+            margin-left: auto;
+        }
+    </style>
+
+    <link
+        href="https://fonts.googleapis.com/css?family=Roboto:100,200,300,regular,500,600,700,800,900,100italic,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic"
+        rel="stylesheet" />
+</head>
+
+
+<body>
+    <div class="card">
+        <div class="contact-info">
+            <h1>
+                Contact Us
+            </h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore, obcaecati perspiciatis. Nobis aspernatur
+                voluptatem neque iste consectetur facilis sed quo voluptatibus aperiam veniam? Sequi assumenda omnis
+                excepturi, praesentium ut optio!</p>
+            <p>Call us on +91 9878654345</p>
+            <p>Timings : </p>
+
+            <h4>
+                Follow us on
+            </h4>
+            <div class="social-links">
+
+                <p>Instagram</p>
+                <p>Facebook</p>
+                <p>linkedin</p>
+            </div>
+        </div>
+        <div class="contact-form">
+            <h1>
+                Contact Form
+            </h1>
+            <form>
+                <label for="name">Name:</label><br>
+                <input type="text" id="name" name="name" required class="text-input"><br><br>
+                <label for="email">Email:</label><br>
+                <input type="email" id="email" name="email" required class="text-input"><br><br>
+                <label for="message">Message:</label><br>
+                <textarea id="message" name="message" required class="text-input"></textarea><br><br>
+                <input type="submit" class="send" value="Submit">
+        </div>
+    </div>
+</body>
+
+</html>
